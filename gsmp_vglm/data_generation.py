@@ -1,5 +1,5 @@
 """
-Module for generating synthetic data from GSMP and GLM models.
+Module for generating synthetic data from GSMP and TETLG models.
 """
 
 import numpy as np
@@ -22,7 +22,7 @@ class BaseGenerator:
         raise NotImplementedError("make_data method must be implemented by subclasses")
 
 
-class GLMData(BaseGenerator):
+class TETLG_GLMData(BaseGenerator):
     """Generate data from a GLM model with specified parameters."""
     
     def __init__(
